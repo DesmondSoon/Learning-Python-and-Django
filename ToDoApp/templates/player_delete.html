@@ -1,0 +1,18 @@
+
+
+
+
+
+<ul>
+  <h1> Do you want to delete? </h1>
+
+  <p> Player name : {{object.name}} </p>
+  <p> Player Division : {{object.player_div}} </p>
+  <p> Player Club :{{object.player_club}} </p>
+
+
+
+  <form action='/player_delete/{{player.id}}' method="POST" > {% csrf_token %}
+    <input type = "submit" value = "Delete" /> <a href = '../'>Cancel</a>
+  </form>
+</ul>

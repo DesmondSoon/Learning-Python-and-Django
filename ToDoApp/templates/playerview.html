@@ -1,0 +1,13 @@
+<h1> This is Player List </h1>
+
+<ul>
+  {% for instance in player_list %}
+
+<p>{{instance.id}} <a href = '{{instance.get_absolute_url}}'> Name : {{instance.name}} - Division : {{instance.player_div}} </a></p>
+
+  {%endfor%}
+
+
+
+
+</ul>

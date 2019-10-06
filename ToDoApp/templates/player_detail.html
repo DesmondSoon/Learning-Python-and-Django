@@ -1,0 +1,21 @@
+
+
+
+
+
+<p> Player name : {{object.name}} </p>
+<p> Player Division : {{object.player_div}} </p>
+<p> Player Club :{{object.player_club}} </p>
+
+<ul>
+    <li> {{ object.name }},
+         {{ object.player_div }},
+         {{ object.player_club}}
+
+      <form action= "/players/delete_players"
+            style = "display:inline;"
+            method="post"> {%csrf_token%}
+        <input type = "submit" value = "Delete"/>
+      </form>
+    </li>
+</ul>
