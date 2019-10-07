@@ -1,0 +1,11 @@
+<h1> This is a Blog List </h1>
+
+<ul>
+
+
+<form method="POST"> {% csrf_token %}
+  {{form.as_p}}
+  <input type='submit' value= 'Save'/>
+</form>
+
+</ul>

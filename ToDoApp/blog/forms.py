@@ -3,11 +3,14 @@ from django import forms
 from .models import Articles
 
 
-class articlesform (forms.ModelForm):
+class ArticlesModelform (forms.ModelForm):
 
-    class meta:
-        fields :[
+
+    class Meta:
+        model = Articles
+        fields =[
             'title',
             'content',
-            'publish_date',
+            'active',
+            # 'publish_date',
         ]
