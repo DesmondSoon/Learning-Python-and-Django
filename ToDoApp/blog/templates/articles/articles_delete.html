@@ -1,0 +1,14 @@
+
+<ul>
+  <h1> Do you want to delete? </h1>
+
+  <p> Blog title: {{object.title}} </p>
+  <p> Blog content : {{object.content}} </p>
+
+
+
+
+  <form action='.' method="POST" > {% csrf_token %}
+    <input type = "submit" value = "Delete" /> <a href = '../'>Cancel</a>
+  </form>
+</ul>
