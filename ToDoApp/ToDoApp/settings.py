@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'todo',
     'players',
     'blog',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/accounts/'
+
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025

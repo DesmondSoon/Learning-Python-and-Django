@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path,include
 
 from todo.views import *
+from ToDoApp.views import *
 
 urlpatterns = [
+    path('',login_redirect, name= 'login_redirect'),
+    path('accounts/', include('accounts.urls')),
+    path('accounts/', include('accounts.urls')),
     path('blog/', include('blog.urls')),
     path('players/', include('players.urls')),
     path('admin/', admin.site.urls),
